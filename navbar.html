@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title></title>
+	<style>
+		*{
+	margin: 0;
+	padding: 0;
+}
+#container{
+	display: flex;
+	background-color: #1c2938;
+	/*justify-content: space-between;*/
+	align-items: center;
+	color: white;
+	height: 40px;
+	border-radius: 30px;
+}
+.logo{
+	margin: 20px;
+	width: 70%;
+}
+.link{
+	display: flex;
+	justify-content: space-between;
+}
+.link > div > a{
+	margin: 20px;
+	padding: 10px;
+	justify-content: space-between;
+	text-decoration: none;
+	color: white;
+}
+.link > div > a:hover{
+	background-color: white;
+	color: #1c2938;
+	font-weight: 700;
+	border-radius: 10px;
+}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="logo">
+			Reebok
+		</div>
+		<div class="link">
+			<div><a href="#">Men</a></div>
+			<div><a href="#">Women</a></div>
+			<div><a href="#">Login</a></div>
+			<div><a href="#">Signup</a></div>
+		</div>
+	</div>
+</body>
+</html>
