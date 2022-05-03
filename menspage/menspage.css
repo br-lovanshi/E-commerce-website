@@ -1,0 +1,23 @@
+#bigbox{
+    display:flex;
+    gap:25px;
+   
+     width:80%;
+     margin: auto;
+
+   
+}
+#bigbox>div{
+   
+    margin: auto;
+    gap:25px;
+    width:38%;
+   
+    justify-content: space-around
+
+}
+p{
+  font-size: 25px;
+  color: grey;
+}
+
