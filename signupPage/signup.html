@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signupPage</title>
+    <style>
+        #container{ margin-top: 100px;
+            height: 500px; 
+            /* border: 1px solid red; */
+            width: 30%;margin: auto;background-color: rgb(117, 201, 201);
+           
+
+        }
+
+        p{font-family: sans-serif; color: white;font-size: 25px;padding-top: 50px;}
+        #container>div:nth-child(1) {margin:auto;width: 30%;}
+        #container>div:nth-child(2){margin: auto;width: 80%;}
+
+
+        form{margin-top: 40px;}
+        input{margin-top: 15px;}
+        button{margin-top: 15px;width: 100%;height: 50px;}
+
+        input{height: 50px; width: 95%;}
+
+        form>input{
+            
+            background-color: white;
+            padding-left: 15px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        form>input::placeholder{
+            font-size: 16px;
+            font-weight: lighter;
+        }
+
+        button{
+            cursor: pointer;
+            background-color: #17A589;
+            border: none;
+            color: white;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+        form>button:nth-child(2){
+            padding-bottom: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div><p>- Visitors -</p>  </div>
+            <div>
+                <form action="">
+                    <input id="name" type="text" placeholder="Full name" >
+                    <input id="email" placeholder="Email" type="text" >
+                    <input id="Organisation" placeholder="Organisation" type="text">
+                    <button>SIGN UP</button>
+                    <button>RETURN</button>
+                </form>
+            </div>
+        
+    </div>
+    
+</body>
+</html>
+<script>
+
+    var form=document.querySelector("form")
+    form.addEventListener("submit",show)
+    function show(){
+        event.preventDefault()
+        var obj={
+            name:document.getElementById("name").value,
+            email:document.getElementById("email").value,
+            organisation:document.getElementById("organisation").value
+        }
+
+        alert(obj.name)
+    }
+
+</script>
